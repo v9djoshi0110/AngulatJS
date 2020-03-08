@@ -1,0 +1,13 @@
+
+<small *ngIf="invalidUser; else elseBlock" >{{errorMessage}}</small>
+
+<ng-template #elseBlock>
+<div>
+UserName: <input type="text" [(ngModel)]="username"/> <br>
+Password: <input type="password" name="password" [(ngModel)]="password"/>
+<br>
+<button (click)=doLogin()>Login</button>
+
+</div>
+</ng-template>
+
