@@ -1,0 +1,23 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>TargetDate</th>
+            <th>is Completed?</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- for(Todo todo:todos) {  -->
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.description}}</td>           
+            <td>{{todo.targetDate | date | uppercase}}</td>
+            <td align="center">{{todo.done}}</td>
+        </tr>
+        <!-- }  -->
+    </tbody>
+</table>
+<!-- <div *ngFor="let todo of todoes">
+   id: {{todo.id}}
+
+</div> -->
